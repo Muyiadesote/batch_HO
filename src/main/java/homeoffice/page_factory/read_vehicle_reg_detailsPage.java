@@ -48,8 +48,8 @@ public class read_vehicle_reg_detailsPage {
         StartNow.click();
     }
 
-    public void enterCarReg(String s) throws IOException, InterruptedException {
-        File file = new File("src/main/resources/in/car_details.csv");
+    public void enterCarReg(String line)throws IOException {
+        File file = new File("D:/data.csv");
         if(file.exists()){
             System.out.println("File Exists");
         }
@@ -68,14 +68,13 @@ public class read_vehicle_reg_detailsPage {
                 row++;
 
                 EnterReg.clear();
-                EnterReg.sendKeys("id");
-
+                EnterReg.sendKeys(line);
 
             }
             bufRdr.close();
         }
-
     }
+
     public void continueBtn(){
         ContinueBtn.click();
     }

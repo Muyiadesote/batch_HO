@@ -30,7 +30,7 @@ public class MyStepdefs extends DriverInstance{
     public void i_Enter_a_vehicle_Registration() throws Throwable {
 
         Thread.sleep(2000);
-        rvp.enterCarReg("id");
+        rvp.enterCarReg("line");
     }
 
     @When("^I click on continue$")
