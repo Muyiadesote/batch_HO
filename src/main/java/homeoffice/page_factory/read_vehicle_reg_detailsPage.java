@@ -48,8 +48,8 @@ public class read_vehicle_reg_detailsPage {
         StartNow.click();
     }
 
-    public void enterCarReg(String line)throws IOException {
-        File file = new File("D:/data.csv");
+    public void enterCarReg()throws IOException {
+        File file = new File("src\\main\\resources\\in\\car_details.csv");
         if(file.exists()){
             System.out.println("File Exists");
         }
