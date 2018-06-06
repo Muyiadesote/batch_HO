@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 @SpringBootApplication
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
 public class BatchExerciseApplication {
+	//this class is used to run the file writer and reader class
 
 	public static void main(String[] args) {
 		SpringApplication.run(BatchExerciseApplication.class, args);

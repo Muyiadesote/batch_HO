@@ -18,7 +18,7 @@ public class Hooks {
 
     @After
     public void tearDown(){
-        di.closeBrowser();
+        //di.closeBrowser();
 
 
     }

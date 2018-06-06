@@ -32,6 +32,8 @@ import org.springframework.core.io.Resource;
 @EnableBatchProcessing
 public class BatchConfiguration {
 
+    //this class configures the file writer and reader
+
     @Autowired
     public JobBuilderFactory jobBuilderFactory;
 
